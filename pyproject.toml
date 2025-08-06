@@ -1,0 +1,16 @@
+[project]
+name = "vampire-survivor"
+version = "0.1.0"
+description = "Simple 2D Game. Built using PyGame."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pygame-ce>=2.5.5",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+line-length = 100
