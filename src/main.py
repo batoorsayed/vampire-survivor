@@ -1,9 +1,9 @@
 from player import Player
-from settings import WINDOW_HEIGHT, WINDOW_WIDTH, join, pygame
+from settings import WINDOW_HEIGHT, WINDOW_WIDTH, pygame
 
 
-# PyGame Init
 class Game:
+    # PyGame Init
     def __init__(self) -> None:
         pygame.init()
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -15,7 +15,7 @@ class Game:
         self.all_sprites = pygame.sprite.Group()
 
         # Call Sprites
-        self.player = Player(self.all_sprites)
+        self.player = Player((400, 300), self.all_sprites)
 
     # Main Loop
     def run(self):
